@@ -17,7 +17,7 @@ flowchart LR
     D --> F["⑥ 注释字幕<br/>python notes.py"]
     E --> G["⑦ 烧制硬字幕<br/>burn.ps1"]
     F --> G
-    G --> H["输出 <项目名>_burnt.mp4"]
+    G --> H["输出 项目名_burnt.mp4"]
 ```
 
 | 步骤 | 脚本 | 输入 | 输出 | 环节 |
