@@ -1,0 +1,10 @@
+# VideoSub 工作区
+#
+# 规则说明：
+#   /*/        忽略根目录下的所有文件夹（项目数据、_archive、__pycache__ 等）
+#   !/skills/  仅放行 skills/ 目录，使其纳入版本控制
+#
+# 根目录的文件（*.ps1 / *.py / README.md / current.txt 等）不受影响，仍会被 git 跟踪。
+
+/*/
+!/skills/
