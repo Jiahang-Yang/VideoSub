@@ -5,11 +5,12 @@
 #   !/skills/      放行本地 skills/ 副本（编辑主副本，纳入版本控制）
 #   /.github/      忽略 .github/：其下 .github/skills/ 是本地部署副本
 #                  （Copilot 官方识别位置），不进版本库，由用户手动同步
-#   /current.txt   忽略当前项目状态文件（本地专用，不进版本库）
+#
+# current.txt 保持被跟踪（版本库中为空占位），本地修改通过
+#   git update-index --skip-worktree current.txt 忽略，不会同步到远程。
 #
 # 根目录的文件（*.ps1 / *.py / README.md 等）不受影响，仍会被 git 跟踪。
 
 /*/
 !/skills/
 /.github/
-/current.txt
