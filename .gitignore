@@ -1,13 +1,15 @@
 # VideoSub 工作区
 #
 # 规则说明：
-#   /*/        忽略根目录下的所有文件夹（项目数据、_archive、__pycache__ 等）
-#   !/skills/  放行本地 skills/ 副本（编辑主副本，纳入版本控制）
-#   /.github/  忽略 .github/：其下 .github/skills/ 是本地部署副本
-#              （Copilot 官方识别位置），不进版本库，由用户手动同步
+#   /*/            忽略根目录下的所有文件夹（项目数据、_archive、__pycache__ 等）
+#   !/skills/      放行本地 skills/ 副本（编辑主副本，纳入版本控制）
+#   /.github/      忽略 .github/：其下 .github/skills/ 是本地部署副本
+#                  （Copilot 官方识别位置），不进版本库，由用户手动同步
+#   /current.txt   忽略当前项目状态文件（本地专用，不进版本库）
 #
-# 根目录的文件（*.ps1 / *.py / README.md / current.txt 等）不受影响，仍会被 git 跟踪。
+# 根目录的文件（*.ps1 / *.py / README.md 等）不受影响，仍会被 git 跟踪。
 
 /*/
 !/skills/
 /.github/
+/current.txt
