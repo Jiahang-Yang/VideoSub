@@ -2,9 +2,11 @@
 #
 # 规则说明：
 #   /*/        忽略根目录下的所有文件夹（项目数据、_archive、__pycache__ 等）
-#   !/skills/  仅放行 skills/ 目录，使其纳入版本控制
+#   !/skills/  放行本地 skills/ 副本（编辑主副本）
+#   !/.github/ 放行 .github/skills/（Copilot 官方识别位置，部署副本）
 #
 # 根目录的文件（*.ps1 / *.py / README.md / current.txt 等）不受影响，仍会被 git 跟踪。
 
 /*/
 !/skills/
+!/.github/
